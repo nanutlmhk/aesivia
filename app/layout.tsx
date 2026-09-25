@@ -6,8 +6,12 @@ export const metadata: Metadata = {
   description:
     "Create your character and enter a living healthcare journey RPG.",
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: [
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/brand/aesivia-icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+    shortcut: "/favicon-32.png",
+    apple: "/brand/aesivia-icon-192.png",
   },
 };
 

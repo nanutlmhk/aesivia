@@ -24,7 +24,7 @@ export function LandingExperience({ signedIn }: { signedIn: boolean }) {
   if (loading) {
     return (
       <main className="loading-screen" aria-busy="true" aria-label="Loading AESIVIA">
-        <div className="loading-mark" aria-hidden="true"><span /><span /><span /></div>
+        <img className="loading-brand-mark" src="/brand/aesivia-mark.png" alt="" aria-hidden="true" />
         <p className="eyebrow">AESIVIA</p>
         <h1>Every journey changes a life.</h1>
         <Progress value={progress} className="loading-progress" />
@@ -36,7 +36,7 @@ export function LandingExperience({ signedIn }: { signedIn: boolean }) {
   return (
     <main className="landing-shell">
       <nav className="site-nav" aria-label="Primary navigation">
-        <a className="wordmark" href="/" aria-label="AESIVIA home"><span className="wordmark-pulse" aria-hidden="true" />AESIVIA</a>
+        <a className="wordmark" href="/" aria-label="AESIVIA home"><img src="/brand/aesivia-icon-192.png" alt="" aria-hidden="true" />AESIVIA</a>
         <span className="day-label">DAY 01 · YOUR STORY BEGINS</span>
       </nav>
 
